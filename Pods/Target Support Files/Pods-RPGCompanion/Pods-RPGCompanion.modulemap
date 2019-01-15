@@ -1,0 +1,6 @@
+framework module Pods_RPGCompanion {
+  umbrella header "Pods-RPGCompanion-umbrella.h"
+
+  export *
+  module * { export * }
+}

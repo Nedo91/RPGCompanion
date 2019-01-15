@@ -1,0 +1,3 @@
+//struct CharacterViewModel {
+//    <#fields#>
+//}
