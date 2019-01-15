@@ -11,11 +11,8 @@ class RPGCompanionDatabase {
     }
     
     func createTables() {
-        let charRepository = CharacterRepository()
-        
         do {
-            try charRepository.createCharacterTable(connection: self.connection)
-           
+            try CharacterRepository().createTable(connection: self.connection)
         } catch  {
             // silenced
         }

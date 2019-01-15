@@ -1,11 +1,10 @@
 import Foundation
 
-class RaceType {
-    var id: Int!
-    var staminaMultiplicator: Double!
+final class RaceType: BaseEntity {
+  var staminaMultiplicator: Double!
 
-    public init(id: Int!, staminaMultiplicator: Double!) {
-        self.id = id
-        self.staminaMultiplicator = staminaMultiplicator
-    }
+  public init(id: Int?, staminaMultiplicator: Double!) {
+    super.init(id: id)
+    self.staminaMultiplicator = staminaMultiplicator
+  }
 }

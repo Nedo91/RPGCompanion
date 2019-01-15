@@ -31,6 +31,8 @@
 		1FB527CF21EDFED50089EA8E /* BasementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527CE21EDFED50089EA8E /* BasementRepository.swift */; };
 		1FB527D121EE01C70089EA8E /* MissionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527D021EE01C70089EA8E /* MissionRepository.swift */; };
 		4CAD6E8B7CDABCB43C880D8E /* Pods_RPGCompanion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */; };
+		763BF8A221EE0867005177C9 /* BaseEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BF8A121EE0867005177C9 /* BaseEntityProtocol.swift */; };
+		763BF8A521EE09E5005177C9 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BF8A421EE09E5005177C9 /* BaseRepository.swift */; };
 		764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764361A221EDD90E002425A0 /* BuildingLevel.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,8 @@
 		1FB527CE21EDFED50089EA8E /* BasementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasementRepository.swift; sourceTree = "<group>"; };
 		1FB527D021EE01C70089EA8E /* MissionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRepository.swift; sourceTree = "<group>"; };
 		25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPGCompanion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763BF8A121EE0867005177C9 /* BaseEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityProtocol.swift; sourceTree = "<group>"; };
+		763BF8A421EE09E5005177C9 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		764361A221EDD90E002425A0 /* BuildingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingLevel.swift; sourceTree = "<group>"; };
 		7A7C24D55FE842971B655E0C /* Pods-RPGCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGCompanion.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPGCompanion/Pods-RPGCompanion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +93,7 @@
 		1F2A4E9D21ECA97F00B91A27 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				763BF8A021EE084D005177C9 /* Base */,
 				1F2A4E9E21ECAA8300B91A27 /* Character.swift */,
 				1FB527B921EDC4C60089EA8E /* RaceType.swift */,
 				1FB527BB21EDC52A0089EA8E /* ClassType.swift */,
@@ -102,8 +107,8 @@
 		1F2A4EA021ECAC5D00B91A27 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				763BF8A321EE09D7005177C9 /* Base */,
 				1F2A4EA121ECACAB00B91A27 /* CharacterRepository.swift */,
-				1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */,
 				1FB527C821EDDA3F0089EA8E /* RaceTypeRepository.swift */,
 				1FB527CA21EDE9B80089EA8E /* ClassTypeRepo.swift */,
 				1FB527CC21EDF16B0089EA8E /* BuildingRepository.swift */,
@@ -150,6 +155,7 @@
 		1F93593321ECA0ED002FAD2D /* RPGCompanion */ = {
 			isa = PBXGroup;
 			children = (
+				1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */,
 				1FB527C321EDC7E70089EA8E /* Enums */,
 				1F41A0FF21ECD5FF00ECBBE9 /* ViewModels */,
 				1F41A0FC21ECD52F00ECBBE9 /* Services */,
@@ -174,6 +180,22 @@
 				764361A221EDD90E002425A0 /* BuildingLevel.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		763BF8A021EE084D005177C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				763BF8A121EE0867005177C9 /* BaseEntityProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		763BF8A321EE09D7005177C9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				763BF8A421EE09E5005177C9 /* BaseRepository.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		AB90993ADA283A32BD23DA52 /* Pods */ = {
@@ -324,7 +346,9 @@
 				1F41A10321ECF8C300ECBBE9 /* RPGCompanionDatabase.swift in Sources */,
 				1FB527C721EDC8D00089EA8E /* BuildingType.swift in Sources */,
 				1FB527C921EDDA3F0089EA8E /* RaceTypeRepository.swift in Sources */,
+				763BF8A221EE0867005177C9 /* BaseEntityProtocol.swift in Sources */,
 				1FB527C521EDC7F80089EA8E /* BasementType.swift in Sources */,
+				763BF8A521EE09E5005177C9 /* BaseRepository.swift in Sources */,
 				1F41A0FE21ECD55700ECBBE9 /* CharacterService.swift in Sources */,
 				1F2A4E9F21ECAA8300B91A27 /* Character.swift in Sources */,
 				1F2A4EA221ECACAB00B91A27 /* CharacterRepository.swift in Sources */,
