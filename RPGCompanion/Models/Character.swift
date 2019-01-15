@@ -8,6 +8,10 @@
 
 import Foundation
 
+//var raceTypId: Int!
+//var classTypeId: Int!
+//var basementId: Int!
+
 
 class Character {
     var id: Int?
