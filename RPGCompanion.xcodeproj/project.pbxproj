@@ -25,6 +25,11 @@
 		1FB527C221EDC5F40089EA8E /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527C121EDC5F40089EA8E /* Mission.swift */; };
 		1FB527C521EDC7F80089EA8E /* BasementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527C421EDC7F80089EA8E /* BasementType.swift */; };
 		1FB527C721EDC8D00089EA8E /* BuildingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527C621EDC8D00089EA8E /* BuildingType.swift */; };
+		1FB527C921EDDA3F0089EA8E /* RaceTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527C821EDDA3F0089EA8E /* RaceTypeRepository.swift */; };
+		1FB527CB21EDE9B80089EA8E /* ClassTypeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527CA21EDE9B80089EA8E /* ClassTypeRepo.swift */; };
+		1FB527CD21EDF16B0089EA8E /* BuildingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527CC21EDF16B0089EA8E /* BuildingRepository.swift */; };
+		1FB527CF21EDFED50089EA8E /* BasementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527CE21EDFED50089EA8E /* BasementRepository.swift */; };
+		1FB527D121EE01C70089EA8E /* MissionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527D021EE01C70089EA8E /* MissionRepository.swift */; };
 		4CAD6E8B7CDABCB43C880D8E /* Pods_RPGCompanion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */; };
 		764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764361A221EDD90E002425A0 /* BuildingLevel.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +56,11 @@
 		1FB527C121EDC5F40089EA8E /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		1FB527C421EDC7F80089EA8E /* BasementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasementType.swift; sourceTree = "<group>"; };
 		1FB527C621EDC8D00089EA8E /* BuildingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingType.swift; sourceTree = "<group>"; };
+		1FB527C821EDDA3F0089EA8E /* RaceTypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTypeRepository.swift; sourceTree = "<group>"; };
+		1FB527CA21EDE9B80089EA8E /* ClassTypeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTypeRepo.swift; sourceTree = "<group>"; };
+		1FB527CC21EDF16B0089EA8E /* BuildingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingRepository.swift; sourceTree = "<group>"; };
+		1FB527CE21EDFED50089EA8E /* BasementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasementRepository.swift; sourceTree = "<group>"; };
+		1FB527D021EE01C70089EA8E /* MissionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRepository.swift; sourceTree = "<group>"; };
 		25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPGCompanion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		764361A221EDD90E002425A0 /* BuildingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingLevel.swift; sourceTree = "<group>"; };
 		7A7C24D55FE842971B655E0C /* Pods-RPGCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGCompanion.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPGCompanion/Pods-RPGCompanion.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +104,11 @@
 			children = (
 				1F2A4EA121ECACAB00B91A27 /* CharacterRepository.swift */,
 				1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */,
+				1FB527C821EDDA3F0089EA8E /* RaceTypeRepository.swift */,
+				1FB527CA21EDE9B80089EA8E /* ClassTypeRepo.swift */,
+				1FB527CC21EDF16B0089EA8E /* BuildingRepository.swift */,
+				1FB527CE21EDFED50089EA8E /* BasementRepository.swift */,
+				1FB527D021EE01C70089EA8E /* MissionRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -296,14 +311,19 @@
 				1FB527BA21EDC4C60089EA8E /* RaceType.swift in Sources */,
 				1F93593921ECA0ED002FAD2D /* DetailViewController.swift in Sources */,
 				1FB527BE21EDC5540089EA8E /* Buildings.swift in Sources */,
+				1FB527CB21EDE9B80089EA8E /* ClassTypeRepo.swift in Sources */,
 				764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */,
+				1FB527CF21EDFED50089EA8E /* BasementRepository.swift in Sources */,
 				1F41A10121ECD61100ECBBE9 /* CharacterViewModel.swift in Sources */,
 				1FB527C021EDC59B0089EA8E /* Basement.swift in Sources */,
 				1F93593721ECA0ED002FAD2D /* MasterViewController.swift in Sources */,
+				1FB527D121EE01C70089EA8E /* MissionRepository.swift in Sources */,
 				1F93593521ECA0ED002FAD2D /* AppDelegate.swift in Sources */,
 				1FB527C221EDC5F40089EA8E /* Mission.swift in Sources */,
+				1FB527CD21EDF16B0089EA8E /* BuildingRepository.swift in Sources */,
 				1F41A10321ECF8C300ECBBE9 /* RPGCompanionDatabase.swift in Sources */,
 				1FB527C721EDC8D00089EA8E /* BuildingType.swift in Sources */,
+				1FB527C921EDDA3F0089EA8E /* RaceTypeRepository.swift in Sources */,
 				1FB527C521EDC7F80089EA8E /* BasementType.swift in Sources */,
 				1F41A0FE21ECD55700ECBBE9 /* CharacterService.swift in Sources */,
 				1F2A4E9F21ECAA8300B91A27 /* Character.swift in Sources */,
