@@ -1,16 +1,17 @@
 import Foundation
 import SQLite
 
-class MissionRepository {
-    let idExpression = Expression<Int>("id")
+class MissionRepository: BaseRepository {
     let characterIdExpression = Expression<Int>("characterId")
     let nameExpression = Expression<String>("name")
     let reqComputedPointsExpression = Expression<Int>("reqComputedPoints")
     
-    let missions = Table("missions")
+    override var table: Table {
+        return Table("Missions")
+    }
     
-    func createClassTypeTable(connection: Connection) throws {
-        try connection.run(missions.create { table in
+    override func createTable(connection: Connection) throws {
+        try connection.run(table.create { table in
             table.column(idExpression, primaryKey: .autoincrement)
             table.column(characterIdExpression)
             table.column(nameExpression)
@@ -18,58 +19,23 @@ class MissionRepository {
         })
     }
     
-    func getMissions(connection: Connection) -> [Mission] {
-        do {
-            let rows = try connection.prepare(missions)
-            return rows.compactMap { row -> Mission in
-                return mapToMission(row: row)
-            }
-        } catch {
+    override func getSetters(item: BaseEntityProtocol) -> [Setter] {
+        guard let mission = item as? Mission else {
             return []
         }
+        
+        return [
+            self.characterIdExpression <- mission.characterId,
+            self.nameExpression <- mission.name,
+            self.reqComputedPointsExpression <- mission.reqComputedPoints
+        ]
     }
     
-    private func mapToMission(row: Row) -> Mission {
+    internal override func mapToModel(row: Row) -> BaseEntityProtocol {
         return Mission(id: row[idExpression],
                          characterId: row[characterIdExpression],
                          name: row[nameExpression],
                          reqComputedPoints: row[reqComputedPointsExpression])
-    }
-    
-    func addMission(mission: Mission, connection: Connection) throws -> Int64 {
-        return try connection.run(missions.insert(
-        self.characterIdExpression <- mission.characterId,
-        self.nameExpression <- mission.name,
-        self.reqComputedPointsExpression <- mission.reqComputedPoints))
-    }
-    
-    func editMission(mission: Mission, connection: Connection) throws -> Int {
-        guard let id = mission.id else {
-            return -1
-        }
-        
-        let editDeclaration = missions.filter(idExpression == id).update(
-            self.characterIdExpression <- mission.characterId,
-            self.nameExpression <- mission.name,
-            self.reqComputedPointsExpression <- mission.reqComputedPoints)
-        return try connection.run(editDeclaration)
-    }
-    
-    func removeMission(connection: Connection, idToRemove: Int) throws {
-        let removeDeclaration = missions.filter(idExpression == idToRemove).delete()
-        try connection.run(removeDeclaration)
-    }
-    
-    func getById(id: Int, connection: Connection) throws -> Mission? {
-        do {
-            let rows = try connection.prepare(missions.filter(id == idExpression).limit(1))
-            for row in rows {
-                return mapToMission(row: row)
-            }
-            return nil
-        } catch {
-            return nil
-        }
     }
 }
 

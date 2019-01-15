@@ -1,16 +1,18 @@
 import Foundation
 import SQLite
 
-class ClassTypeRepository {
-    let idExpression = Expression<Int>("id")
+class ClassTypeRepository: BaseRepository {
+
     let strengthMultiplicatorExpression = Expression<Double>("strengthMultiplicator")
     let intelectMultiplicatorExpression = Expression<Double>("intelectMultiplicator")
     let agilityMultiplicatorExpression = Expression<Double>("agilityMultiplicator")
     
-    let classTypes = Table("classTypes")
+    override var table: Table {
+        return Table("classType")
+    }
     
-    func createClassTypeTable(connection: Connection) throws {
-        try connection.run(classTypes.create { table in
+    override func createTable(connection: Connection) throws {
+        try connection.run(table.create { table in
             table.column(idExpression, primaryKey: .autoincrement)
             table.column(intelectMultiplicatorExpression)
             table.column(strengthMultiplicatorExpression)
@@ -18,56 +20,22 @@ class ClassTypeRepository {
         })
     }
     
-    func getCharClassTypes(connection: Connection) -> [ClassType] {
-        do {
-            let rows = try connection.prepare(classTypes)
-            return rows.compactMap { row -> ClassType in
-                return mapToClassType(row: row)
-            }
-        } catch {
+    override func getSetters(item: BaseEntityProtocol) -> [Setter] {
+        guard let classType = item as? ClassType else {
             return []
         }
+        return [
+            self.intelectMultiplicatorExpression <- classType.intelectMultiplicator,
+            self.agilityMultiplicatorExpression <- classType.agilityMultiplicator,
+            self.strengthMultiplicatorExpression <- classType.strengthMultiplicator
+        ]
     }
     
-    private func mapToClassType(row: Row) -> ClassType {
+    internal override func mapToModel(row: Row) -> BaseEntityProtocol {
         return ClassType(id: row[idExpression],
                          agilityMultiplicator: row[agilityMultiplicatorExpression],
                          strengthMultiplicator: row[strengthMultiplicatorExpression],
                          intelectMultiplicator: row[intelectMultiplicatorExpression])
-    }
-    
-    func addClassType(classTyp: ClassType, connection: Connection) throws -> Int64 {
-        return try connection.run(classTypes.insert(
-            self.intelectMultiplicatorExpression <- classTyp.intelectMultiplicator))
-    }
-    
-    func editRaceType(classTyp: ClassType, connection: Connection) throws -> Int {
-        guard let id = classTyp.id else {
-            return -1
-        }
-        
-        let editDeclaration = classTypes.filter(idExpression == id).update(
-            self.intelectMultiplicatorExpression <- classTyp.intelectMultiplicator,
-            self.agilityMultiplicatorExpression <- classTyp.agilityMultiplicator,
-            self.strengthMultiplicatorExpression <- classTyp.strengthMultiplicator)
-        return try connection.run(editDeclaration)
-    }
-    
-    func removeClassType(connection: Connection, idToRemove: Int) throws {
-        let removeDeclaration = classTypes.filter(idExpression == idToRemove).delete()
-        try connection.run(removeDeclaration)
-    }
-    
-    func getById(id: Int, connection: Connection) throws -> ClassType? {
-        do {
-            let rows = try connection.prepare(classTypes.filter(id == idExpression).limit(1))
-            for row in rows {
-                return mapToClassType(row: row)
-            }
-            return nil
-        } catch {
-            return nil
-        }
-    }
+    }  
 }
 
