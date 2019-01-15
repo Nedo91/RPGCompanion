@@ -14,20 +14,3 @@ enum BuildingTypeEnum : Int {
         }
     }
 }
-
-enum BuildingLevelEnum: Int {
-    case level = 0
-    case level2 = 1
-    case level3 = 2
-    
-    var name: String {
-        switch self {
-        case .level:
-            return "Poziom 1"
-        case .level2:
-            return "Poziom 2"
-        case .level3:
-            return "Poziom 3"
-        }
-    }
-}

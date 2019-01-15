@@ -1,17 +1,4 @@
-//
-//  Character.swift
-//  RPGCompanion
-//
-//  Created by Nedeljko Mijajlovic on 14/01/2019.
-//  Copyright © 2019 Nedeljko Mijajlovic. All rights reserved.
-//
-
 import Foundation
-
-//var raceTypId: Int!
-//var classTypeId: Int!
-//var basementId: Int!
-
 
 class Character {
     var id: Int?

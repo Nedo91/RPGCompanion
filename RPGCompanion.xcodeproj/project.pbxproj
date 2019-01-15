@@ -26,6 +26,7 @@
 		1FB527C521EDC7F80089EA8E /* BasementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527C421EDC7F80089EA8E /* BasementType.swift */; };
 		1FB527C721EDC8D00089EA8E /* BuildingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527C621EDC8D00089EA8E /* BuildingType.swift */; };
 		4CAD6E8B7CDABCB43C880D8E /* Pods_RPGCompanion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */; };
+		764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764361A221EDD90E002425A0 /* BuildingLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		1FB527C421EDC7F80089EA8E /* BasementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasementType.swift; sourceTree = "<group>"; };
 		1FB527C621EDC8D00089EA8E /* BuildingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingType.swift; sourceTree = "<group>"; };
 		25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPGCompanion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		764361A221EDD90E002425A0 /* BuildingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingLevel.swift; sourceTree = "<group>"; };
 		7A7C24D55FE842971B655E0C /* Pods-RPGCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGCompanion.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPGCompanion/Pods-RPGCompanion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 			children = (
 				1FB527C421EDC7F80089EA8E /* BasementType.swift */,
 				1FB527C621EDC8D00089EA8E /* BuildingType.swift */,
+				764361A221EDD90E002425A0 /* BuildingLevel.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				1FB527BA21EDC4C60089EA8E /* RaceType.swift in Sources */,
 				1F93593921ECA0ED002FAD2D /* DetailViewController.swift in Sources */,
 				1FB527BE21EDC5540089EA8E /* Buildings.swift in Sources */,
+				764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */,
 				1F41A10121ECD61100ECBBE9 /* CharacterViewModel.swift in Sources */,
 				1FB527C021EDC59B0089EA8E /* Basement.swift in Sources */,
 				1F93593721ECA0ED002FAD2D /* MasterViewController.swift in Sources */,
