@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1F2A4E9F21ECAA8300B91A27 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A4E9E21ECAA8300B91A27 /* Character.swift */; };
 		1F2A4EA221ECACAB00B91A27 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A4EA121ECACAB00B91A27 /* CharacterRepository.swift */; };
+		1F39C21A21EF489D004B307B /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39C21921EF489D004B307B /* MissionTableViewCell.swift */; };
+		1F39C21C21EF4A04004B307B /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39C21B21EF4A04004B307B /* CharacterTableViewCell.swift */; };
+		1F39C21E21EF4B19004B307B /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F39C21D21EF4B19004B307B /* CharacterTableViewController.swift */; };
 		1F41A0FE21ECD55700ECBBE9 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A0FD21ECD55700ECBBE9 /* CharacterService.swift */; };
 		1F41A10121ECD61100ECBBE9 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A10021ECD61100ECBBE9 /* CharacterViewModel.swift */; };
 		1F41A10321ECF8C300ECBBE9 /* RPGCompanionDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */; };
@@ -40,6 +43,9 @@
 		1B482031807E8FE2784767D6 /* Pods-RPGCompanion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGCompanion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RPGCompanion/Pods-RPGCompanion.debug.xcconfig"; sourceTree = "<group>"; };
 		1F2A4E9E21ECAA8300B91A27 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		1F2A4EA121ECACAB00B91A27 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		1F39C21921EF489D004B307B /* MissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
+		1F39C21B21EF4A04004B307B /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		1F39C21D21EF4B19004B307B /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterTableViewController.swift; path = RPGCompanion/Views/Cells/CharacterTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		1F41A0FD21ECD55700ECBBE9 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		1F41A10021ECD61100ECBBE9 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGCompanionDatabase.swift; sourceTree = "<group>"; };
@@ -118,6 +124,23 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		1F39C21721EF484C004B307B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F39C21821EF4871004B307B /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F39C21821EF4871004B307B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F39C21921EF489D004B307B /* MissionTableViewCell.swift */,
+				1F39C21B21EF4A04004B307B /* CharacterTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		1F41A0FC21ECD52F00ECBBE9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +188,7 @@
 		1F93593321ECA0ED002FAD2D /* RPGCompanion */ = {
 			isa = PBXGroup;
 			children = (
+				1F39C21721EF484C004B307B /* Views */,
 				1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */,
 				1F831CF521EE2A500067F097 /* Controllers */,
 				1FB527C321EDC7E70089EA8E /* Enums */,
@@ -194,6 +218,7 @@
 		762434E521EF449100850DBE /* Character */ = {
 			isa = PBXGroup;
 			children = (
+				1F39C21D21EF4B19004B307B /* CharacterTableViewController.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -360,9 +385,12 @@
 				1FB527CB21EDE9B80089EA8E /* ClassTypeRepo.swift in Sources */,
 				764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */,
 				1FB527CF21EDFED50089EA8E /* BasementRepository.swift in Sources */,
+				1F39C21E21EF4B19004B307B /* CharacterTableViewController.swift in Sources */,
+				1F39C21C21EF4A04004B307B /* CharacterTableViewCell.swift in Sources */,
 				1F41A10121ECD61100ECBBE9 /* CharacterViewModel.swift in Sources */,
 				1FB527C021EDC59B0089EA8E /* Basement.swift in Sources */,
 				1FB527D121EE01C70089EA8E /* MissionRepository.swift in Sources */,
+				1F39C21A21EF489D004B307B /* MissionTableViewCell.swift in Sources */,
 				1F93593521ECA0ED002FAD2D /* AppDelegate.swift in Sources */,
 				1FB527C221EDC5F40089EA8E /* Mission.swift in Sources */,
 				1FB527CD21EDF16B0089EA8E /* BuildingRepository.swift in Sources */,
