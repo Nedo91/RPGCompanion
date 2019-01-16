@@ -12,7 +12,6 @@
 		1F41A0FE21ECD55700ECBBE9 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A0FD21ECD55700ECBBE9 /* CharacterService.swift */; };
 		1F41A10121ECD61100ECBBE9 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A10021ECD61100ECBBE9 /* CharacterViewModel.swift */; };
 		1F41A10321ECF8C300ECBBE9 /* RPGCompanionDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */; };
-		1F831CF721EE2A680067F097 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F831CF621EE2A680067F097 /* MainSplitViewController.swift */; };
 		1F93593521ECA0ED002FAD2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93593421ECA0ED002FAD2D /* AppDelegate.swift */; };
 		1F93593C21ECA0ED002FAD2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93593A21ECA0ED002FAD2D /* Main.storyboard */; };
 		1F93593E21ECA0ED002FAD2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F93593D21ECA0ED002FAD2D /* Assets.xcassets */; };
@@ -30,6 +29,8 @@
 		1FB527CF21EDFED50089EA8E /* BasementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527CE21EDFED50089EA8E /* BasementRepository.swift */; };
 		1FB527D121EE01C70089EA8E /* MissionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB527D021EE01C70089EA8E /* MissionRepository.swift */; };
 		4CAD6E8B7CDABCB43C880D8E /* Pods_RPGCompanion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */; };
+		762434E421EF444D00850DBE /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762434E321EF444D00850DBE /* MainTabBarViewController.swift */; };
+		762434E821EF44BA00850DBE /* MissionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762434E721EF44BA00850DBE /* MissionTableViewController.swift */; };
 		763BF8A221EE0867005177C9 /* BaseEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BF8A121EE0867005177C9 /* BaseEntityProtocol.swift */; };
 		763BF8A521EE09E5005177C9 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BF8A421EE09E5005177C9 /* BaseRepository.swift */; };
 		764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764361A221EDD90E002425A0 /* BuildingLevel.swift */; };
@@ -42,7 +43,6 @@
 		1F41A0FD21ECD55700ECBBE9 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		1F41A10021ECD61100ECBBE9 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGCompanionDatabase.swift; sourceTree = "<group>"; };
-		1F831CF621EE2A680067F097 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		1F93593121ECA0ED002FAD2D /* RPGCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93593421ECA0ED002FAD2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F93593B21ECA0ED002FAD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		1FB527CE21EDFED50089EA8E /* BasementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasementRepository.swift; sourceTree = "<group>"; };
 		1FB527D021EE01C70089EA8E /* MissionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRepository.swift; sourceTree = "<group>"; };
 		25D53A31383AE4574F06E9AD /* Pods_RPGCompanion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPGCompanion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762434E321EF444D00850DBE /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		762434E721EF44BA00850DBE /* MissionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewController.swift; sourceTree = "<group>"; };
 		763BF8A121EE0867005177C9 /* BaseEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityProtocol.swift; sourceTree = "<group>"; };
 		763BF8A421EE09E5005177C9 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		764361A221EDD90E002425A0 /* BuildingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingLevel.swift; sourceTree = "<group>"; };
@@ -135,7 +137,9 @@
 		1F831CF521EE2A500067F097 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1F831CF621EE2A680067F097 /* MainSplitViewController.swift */,
+				762434E621EF44A000850DBE /* Mission */,
+				762434E521EF449100850DBE /* Character */,
+				762434E321EF444D00850DBE /* MainTabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +189,21 @@
 				764361A221EDD90E002425A0 /* BuildingLevel.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		762434E521EF449100850DBE /* Character */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		762434E621EF44A000850DBE /* Mission */ = {
+			isa = PBXGroup;
+			children = (
+				762434E721EF44BA00850DBE /* MissionTableViewController.swift */,
+			);
+			path = Mission;
 			sourceTree = "<group>";
 		};
 		763BF8A021EE084D005177C9 /* Base */ = {
@@ -337,6 +356,7 @@
 				1FB527BC21EDC52A0089EA8E /* ClassType.swift in Sources */,
 				1FB527BA21EDC4C60089EA8E /* RaceType.swift in Sources */,
 				1FB527BE21EDC5540089EA8E /* Buildings.swift in Sources */,
+				762434E421EF444D00850DBE /* MainTabBarViewController.swift in Sources */,
 				1FB527CB21EDE9B80089EA8E /* ClassTypeRepo.swift in Sources */,
 				764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */,
 				1FB527CF21EDFED50089EA8E /* BasementRepository.swift in Sources */,
@@ -354,7 +374,7 @@
 				763BF8A521EE09E5005177C9 /* BaseRepository.swift in Sources */,
 				1F41A0FE21ECD55700ECBBE9 /* CharacterService.swift in Sources */,
 				1F2A4E9F21ECAA8300B91A27 /* Character.swift in Sources */,
-				1F831CF721EE2A680067F097 /* MainSplitViewController.swift in Sources */,
+				762434E821EF44BA00850DBE /* MissionTableViewController.swift in Sources */,
 				1F2A4EA221ECACAB00B91A27 /* CharacterRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
