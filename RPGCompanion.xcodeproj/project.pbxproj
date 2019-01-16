@@ -38,6 +38,7 @@
 		763BF8A521EE09E5005177C9 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BF8A421EE09E5005177C9 /* BaseRepository.swift */; };
 		764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764361A221EDD90E002425A0 /* BuildingLevel.swift */; };
 		76BD2F7221EF51D200A06A2E /* MissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD2F7121EF51D200A06A2E /* MissionViewModel.swift */; };
+		76BD2F7421EF539700A06A2E /* MissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD2F7321EF539700A06A2E /* MissionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		763BF8A421EE09E5005177C9 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		764361A221EDD90E002425A0 /* BuildingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingLevel.swift; sourceTree = "<group>"; };
 		76BD2F7121EF51D200A06A2E /* MissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewModel.swift; sourceTree = "<group>"; };
+		76BD2F7321EF539700A06A2E /* MissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionService.swift; sourceTree = "<group>"; };
 		7A7C24D55FE842971B655E0C /* Pods-RPGCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGCompanion.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPGCompanion/Pods-RPGCompanion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				1F41A0FD21ECD55700ECBBE9 /* CharacterService.swift */,
+				76BD2F7321EF539700A06A2E /* MissionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			files = (
 				76BD2F7221EF51D200A06A2E /* MissionViewModel.swift in Sources */,
 				1FB527BC21EDC52A0089EA8E /* ClassType.swift in Sources */,
+				76BD2F7421EF539700A06A2E /* MissionService.swift in Sources */,
 				1FB527BA21EDC4C60089EA8E /* RaceType.swift in Sources */,
 				1FB527BE21EDC5540089EA8E /* Buildings.swift in Sources */,
 				762434E421EF444D00850DBE /* MainTabBarViewController.swift in Sources */,
