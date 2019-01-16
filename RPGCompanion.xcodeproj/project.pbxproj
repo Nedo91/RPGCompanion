@@ -37,6 +37,7 @@
 		763BF8A221EE0867005177C9 /* BaseEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BF8A121EE0867005177C9 /* BaseEntityProtocol.swift */; };
 		763BF8A521EE09E5005177C9 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763BF8A421EE09E5005177C9 /* BaseRepository.swift */; };
 		764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764361A221EDD90E002425A0 /* BuildingLevel.swift */; };
+		76BD2F7221EF51D200A06A2E /* MissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BD2F7121EF51D200A06A2E /* MissionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		763BF8A121EE0867005177C9 /* BaseEntityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntityProtocol.swift; sourceTree = "<group>"; };
 		763BF8A421EE09E5005177C9 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		764361A221EDD90E002425A0 /* BuildingLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingLevel.swift; sourceTree = "<group>"; };
+		76BD2F7121EF51D200A06A2E /* MissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewModel.swift; sourceTree = "<group>"; };
 		7A7C24D55FE842971B655E0C /* Pods-RPGCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPGCompanion.release.xcconfig"; path = "Pods/Target Support Files/Pods-RPGCompanion/Pods-RPGCompanion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				1F41A10021ECD61100ECBBE9 /* CharacterViewModel.swift */,
+				76BD2F7121EF51D200A06A2E /* MissionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -188,8 +191,8 @@
 		1F93593321ECA0ED002FAD2D /* RPGCompanion */ = {
 			isa = PBXGroup;
 			children = (
-				1F39C21721EF484C004B307B /* Views */,
 				1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */,
+				1F39C21721EF484C004B307B /* Views */,
 				1F831CF521EE2A500067F097 /* Controllers */,
 				1FB527C321EDC7E70089EA8E /* Enums */,
 				1F41A0FF21ECD5FF00ECBBE9 /* ViewModels */,
@@ -378,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76BD2F7221EF51D200A06A2E /* MissionViewModel.swift in Sources */,
 				1FB527BC21EDC52A0089EA8E /* ClassType.swift in Sources */,
 				1FB527BA21EDC4C60089EA8E /* RaceType.swift in Sources */,
 				1FB527BE21EDC5540089EA8E /* Buildings.swift in Sources */,
