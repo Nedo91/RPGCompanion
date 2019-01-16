@@ -12,9 +12,8 @@
 		1F41A0FE21ECD55700ECBBE9 /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A0FD21ECD55700ECBBE9 /* CharacterService.swift */; };
 		1F41A10121ECD61100ECBBE9 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A10021ECD61100ECBBE9 /* CharacterViewModel.swift */; };
 		1F41A10321ECF8C300ECBBE9 /* RPGCompanionDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */; };
+		1F831CF721EE2A680067F097 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F831CF621EE2A680067F097 /* MainSplitViewController.swift */; };
 		1F93593521ECA0ED002FAD2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93593421ECA0ED002FAD2D /* AppDelegate.swift */; };
-		1F93593721ECA0ED002FAD2D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93593621ECA0ED002FAD2D /* MasterViewController.swift */; };
-		1F93593921ECA0ED002FAD2D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93593821ECA0ED002FAD2D /* DetailViewController.swift */; };
 		1F93593C21ECA0ED002FAD2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93593A21ECA0ED002FAD2D /* Main.storyboard */; };
 		1F93593E21ECA0ED002FAD2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F93593D21ECA0ED002FAD2D /* Assets.xcassets */; };
 		1F93594121ECA0ED002FAD2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93593F21ECA0ED002FAD2D /* LaunchScreen.storyboard */; };
@@ -43,10 +42,9 @@
 		1F41A0FD21ECD55700ECBBE9 /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
 		1F41A10021ECD61100ECBBE9 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
 		1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGCompanionDatabase.swift; sourceTree = "<group>"; };
+		1F831CF621EE2A680067F097 /* MainSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		1F93593121ECA0ED002FAD2D /* RPGCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93593421ECA0ED002FAD2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F93593621ECA0ED002FAD2D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		1F93593821ECA0ED002FAD2D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1F93593B21ECA0ED002FAD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F93593D21ECA0ED002FAD2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F93594021ECA0ED002FAD2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,6 +132,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		1F831CF521EE2A500067F097 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F831CF621EE2A680067F097 /* MainSplitViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		1F93592821ECA0ED002FAD2D = {
 			isa = PBXGroup;
 			children = (
@@ -156,14 +162,13 @@
 			isa = PBXGroup;
 			children = (
 				1F41A10221ECF8C300ECBBE9 /* RPGCompanionDatabase.swift */,
+				1F831CF521EE2A500067F097 /* Controllers */,
 				1FB527C321EDC7E70089EA8E /* Enums */,
 				1F41A0FF21ECD5FF00ECBBE9 /* ViewModels */,
 				1F41A0FC21ECD52F00ECBBE9 /* Services */,
 				1F2A4EA021ECAC5D00B91A27 /* Repositories */,
 				1F2A4E9D21ECA97F00B91A27 /* Models */,
 				1F93593421ECA0ED002FAD2D /* AppDelegate.swift */,
-				1F93593621ECA0ED002FAD2D /* MasterViewController.swift */,
-				1F93593821ECA0ED002FAD2D /* DetailViewController.swift */,
 				1F93593A21ECA0ED002FAD2D /* Main.storyboard */,
 				1F93593D21ECA0ED002FAD2D /* Assets.xcassets */,
 				1F93593F21ECA0ED002FAD2D /* LaunchScreen.storyboard */,
@@ -331,14 +336,12 @@
 			files = (
 				1FB527BC21EDC52A0089EA8E /* ClassType.swift in Sources */,
 				1FB527BA21EDC4C60089EA8E /* RaceType.swift in Sources */,
-				1F93593921ECA0ED002FAD2D /* DetailViewController.swift in Sources */,
 				1FB527BE21EDC5540089EA8E /* Buildings.swift in Sources */,
 				1FB527CB21EDE9B80089EA8E /* ClassTypeRepo.swift in Sources */,
 				764361A321EDD90E002425A0 /* BuildingLevel.swift in Sources */,
 				1FB527CF21EDFED50089EA8E /* BasementRepository.swift in Sources */,
 				1F41A10121ECD61100ECBBE9 /* CharacterViewModel.swift in Sources */,
 				1FB527C021EDC59B0089EA8E /* Basement.swift in Sources */,
-				1F93593721ECA0ED002FAD2D /* MasterViewController.swift in Sources */,
 				1FB527D121EE01C70089EA8E /* MissionRepository.swift in Sources */,
 				1F93593521ECA0ED002FAD2D /* AppDelegate.swift in Sources */,
 				1FB527C221EDC5F40089EA8E /* Mission.swift in Sources */,
@@ -351,6 +354,7 @@
 				763BF8A521EE09E5005177C9 /* BaseRepository.swift in Sources */,
 				1F41A0FE21ECD55700ECBBE9 /* CharacterService.swift in Sources */,
 				1F2A4E9F21ECAA8300B91A27 /* Character.swift in Sources */,
+				1F831CF721EE2A680067F097 /* MainSplitViewController.swift in Sources */,
 				1F2A4EA221ECACAB00B91A27 /* CharacterRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
